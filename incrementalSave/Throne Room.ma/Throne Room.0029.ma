@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Throne Room.ma
-//Last modified: Thu, Oct 19, 2017 03:23:37 AM
+//Last modified: Thu, Oct 19, 2017 03:18:47 AM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "2804D333-451C-B3EB-9685-848329D4CA72";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.12520136934934256 3.3068983299935697 31.887889060679775 ;
-	setAttr ".r" -type "double3" 5.6616472408477039 2519.8000000099905 6.2120587082171262e-18 ;
+	setAttr ".t" -type "double3" 6.777884234726435 22.61212313778163 67.864564889083013 ;
+	setAttr ".r" -type "double3" -14.738352759149707 2525.8000000109737 -5.9942262172121364e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "797D09C5-4568-6EA9-EC3A-838919568DFE";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 32.647904089993453;
+	setAttr ".coi" 69.607926837458862;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -81,23 +81,12 @@ createNode mesh -n "pCubeShape3" -p "pCube3";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.60000002384185791 ;
+	setAttr ".pv" -type "double2" 0.58332499861717224 2 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 7 ".pt";
-	setAttr ".pt[352]" -type "float3" -0.059337843 0 0 ;
-	setAttr -av ".pt[352].px";
-	setAttr -av ".pt[352].py";
-	setAttr -av ".pt[352].pz";
-	setAttr ".pt[355]" -type "float3" 0.059337843 0 0 ;
-	setAttr ".pt[358]" -type "float3" 0.00088398252 0 0 ;
-	setAttr -av ".pt[358].px";
-	setAttr -av ".pt[358].py";
-	setAttr -av ".pt[358].pz";
-	setAttr ".pt[360]" -type "float3" -0.00088398252 0 0 ;
 createNode transform -n "pCube4";
 	rename -uid "1D2CB6BF-4F61-030F-7962-D88AB737BD53";
 	setAttr ".t" -type "double3" 0 7.8644075024081985 0 ;
