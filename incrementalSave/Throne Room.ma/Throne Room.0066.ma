@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Throne Room.ma
-//Last modified: Fri, Oct 20, 2017 04:17:56 AM
+//Last modified: Fri, Oct 20, 2017 04:15:26 AM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "2804D333-451C-B3EB-9685-848329D4CA72";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.31694044512910613 1.6471219049837964 32.58215793205126 ;
-	setAttr ".r" -type "double3" 8.6616472535802504 7561.4000000006927 1.2427751535300739e-17 ;
+	setAttr ".t" -type "double3" 0.22386614523222581 2.338995524370167 23.242948553746135 ;
+	setAttr ".r" -type "double3" 7.461647253578108 7559.400000000478 -6.2123614899550517e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "797D09C5-4568-6EA9-EC3A-838919568DFE";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 35.972016797123672;
+	setAttr ".coi" 26.573173936498392;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
