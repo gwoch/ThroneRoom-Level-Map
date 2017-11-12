@@ -1,4 +1,4 @@
-﻿Log file open, 11/12/17 12:24:27
+﻿Log file open, 11/12/17 16:56:45
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
@@ -9,9 +9,9 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: Throne_Room
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-1573737392) SRandInit(-1573737392).
+LogInit: Display: RandInit(277940702) SRandInit(277940702).
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.177447
+LogStats: Stats thread started at 0.171168
 LogD3D11RHI: Aftermath initialized
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -34,6 +34,7 @@ LogPluginManager: Mounting plugin SpeedTreeImporter
 LogPluginManager: Mounting plugin AlembicImporter
 LogPluginManager: Mounting plugin CharacterAI
 LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin Substance
 LogPluginManager: Mounting plugin AndroidMedia
 LogPluginManager: Mounting plugin AvfMedia
 LogPluginManager: Mounting plugin MediaPlayerEditor
@@ -113,754 +114,449 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.11.12-12.24.28:456][  0]LogInit: Selected Device Profile: [Windows]
-[2017.11.12-12.24.28:456][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.11.12-12.24.28:465][  0]LogInit: Computer: DESKTOP-UTLPHC3
-[2017.11.12-12.24.28:465][  0]LogInit: User: Leszek
-[2017.11.12-12.24.28:465][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.11.12-12.24.28:465][  0]LogInit: High frequency timer resolution =2.742183 MHz
-[2017.11.12-12.24.28:466][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.11.12-12.24.28:466][  0]LogMemory: Platform Memory Stats for Windows
-[2017.11.12-12.24.28:466][  0]LogMemory: Process Physical Memory: 280.62 MB used, 280.62 MB peak
-[2017.11.12-12.24.28:466][  0]LogMemory: Process Virtual Memory: 282.32 MB used, 282.32 MB peak
-[2017.11.12-12.24.28:466][  0]LogMemory: Physical Memory: 7229.00 MB used,  9006.94 MB free, 16235.95 MB total
-[2017.11.12-12.24.28:466][  0]LogMemory: Virtual Memory: 710.64 MB used,  9006.94 MB free, 134217728.00 MB total
-[2017.11.12-12.24.29:042][  0]LogInit: Using OS detected language (en-US).
-[2017.11.12-12.24.29:042][  0]LogInit: Using OS detected locale (en-GB).
-[2017.11.12-12.24.29:046][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2017.11.12-12.24.29:894][  0]LogD3D11RHI: D3D11 adapters:
-[2017.11.12-12.24.29:942][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
-[2017.11.12-12.24.29:942][  0]LogD3D11RHI:       4031/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.11.12-12.24.29:949][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
-[2017.11.12-12.24.29:949][  0]LogD3D11RHI:       128/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2017.11.12-12.24.29:951][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.11.12-12.24.29:951][  0]LogD3D11RHI:       0/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.11.12-12.24.29:951][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.11.12-12.24.29:959][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.11.12-12.24.29:959][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
-[2017.11.12-12.24.29:959][  0]LogWindows: EnumDisplayDevices:
-[2017.11.12-12.24.29:959][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
-[2017.11.12-12.24.29:959][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2017.11.12-12.24.29:960][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2017.11.12-12.24.29:960][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2017.11.12-12.24.29:960][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
-[2017.11.12-12.24.29:960][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2017.11.12-12.24.29:960][  0]LogD3D11RHI:      Driver Date: Unknown
-[2017.11.12-12.24.29:960][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.11.12-12.24.29:984][  0]LogD3D11RHI: Async texture creation enabled
-[2017.11.12-12.24.29:999][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.11.12-12.24.30:000][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Intermediate/Shaders/WorkingDirectory/37468/).
-[2017.11.12-12.24.30:000][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Leszek/AppData/Local/Temp/UnrealShaderWorkingDir/AA0DF9FB4A94410251371CAD324CC7D0/'.
-[2017.11.12-12.24.30:000][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2017.11.12-12.24.31:192][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2017.11.12-12.24.31:252][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2017.11.12-12.24.31:313][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2017.11.12-12.24.31:376][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2017.11.12-12.24.31:440][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2017.11.12-12.24.31:502][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2017.11.12-12.24.31:565][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.11.12-12.24.31:626][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2017.11.12-12.24.31:684][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2017.11.12-12.24.31:746][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2017.11.12-12.24.31:807][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2017.11.12-12.24.31:868][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2017.11.12-12.24.31:933][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2017.11.12-12.24.31:994][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2017.11.12-12.24.32:060][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2017.11.12-12.24.32:179][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2017.11.12-12.24.32:179][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.11.12-12.24.32:231][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2017.11.12-12.24.32:344][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2017.11.12-12.24.32:380][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2017.11.12-12.24.32:474][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2017.11.12-12.24.32:541][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.11.12-12.24.32:603][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2017.11.12-12.24.32:664][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2017.11.12-12.24.32:664][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2017.11.12-12.24.33:427][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2017.11.12-12.24.33:496][  0]LogDerivedDataCache: Loaded boot cache 0.07s 93MB C:/Users/Leszek/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
-[2017.11.12-12.24.33:496][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Leszek/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
-[2017.11.12-12.24.33:496][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.11.12-12.24.33:496][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.11.12-12.24.33:496][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.11.12-12.24.33:496][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.11.12-12.24.33:511][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.11.12-12.24.33:524][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Leszek/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.11.12-12.24.33:535][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.11.12-12.24.33:536][  0]LogSlate: Using Freetype 2.6.0
-[2017.11.12-12.24.33:537][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.11.12-12.24.33:538][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.11.12-12.24.33:848][  0]LogAssetRegistry: FAssetRegistry took 0.0259 seconds to start up
-[2017.11.12-12.24.33:982][  0]LogInit: Selected Device Profile: [Windows]
-[2017.11.12-12.24.34:688][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.11.12-12.24.34:784][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.11.12-12.24.34:784][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.11.12-12.24.34:784][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2017.11.12-12.24.34:784][  0]LogMeshReduction: No automatic mesh merging module available
-[2017.11.12-12.24.34:784][  0]LogMeshMerging: No automatic mesh merging module available
-[2017.11.12-12.24.34:785][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.11.12-12.24.35:417][  0]LogNetVersion: Throne_Room , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 874174091)
-[2017.11.12-12.24.35:720][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 2 prioritized culture(s) in 0.044339 seconds
-[2017.11.12-12.24.35:726][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
-[2017.11.12-12.24.35:726][  0]LogUObjectAllocator: 7529104 out of 0 bytes used by permanent object pool.
-[2017.11.12-12.24.35:726][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.11.12-12.24.35:817][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.11.12-12.24.39:342][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.11.12-12.24.39:431][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.11.12-12.24.40:615][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.11.12-12.24.41:180][  0]SourceControl: Source control is disabled
-[2017.11.12-12.24.41:180][  0]SourceControl: Source control is disabled
-[2017.11.12-12.24.41:247][  0]SourceControl: Source control is disabled
-[2017.11.12-12.24.41:308][  0]SourceControl: Source control is disabled
-[2017.11.12-12.24.42:214][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.11.12-12.24.42:709][  0]LogOcInput: OculusInput pre-init called
-[2017.11.12-12.24.43:082][  0]LogEngine: Initializing Engine...
-[2017.11.12-12.24.43:085][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.11.12-12.24.43:323][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.11.12-12.24.43:324][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.11.12-12.24.43:557][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.11.12-12.24.43:567][  0]LogInit: XAudio2 using 'Speakers / Headphones (Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.11.12-12.24.43:584][  0]LogInit: FAudioDevice initialized.
-[2017.11.12-12.24.43:644][  0]LogDerivedDataCache: Saved boot cache 0.06s 93MB C:/Users/Leszek/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
-[2017.11.12-12.24.43:649][  0]LogInit: Texture streaming: Enabled
-[2017.11.12-12.24.43:805][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.11.12-12.24.44:088][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.11.12-12.24.44:123][  0]LogInit: Transaction tracking system initialized
-[2017.11.12-12.24.44:569][  0]BlueprintLog: New page: Editor Load
-[2017.11.12-12.24.46:279][  0]LocalizationService: Localization service is disabled
-[2017.11.12-12.24.47:147][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
-[2017.11.12-12.24.47:147][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
-[2017.11.12-12.24.47:147][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
-[2017.11.12-12.24.47:377][  0]LogConsoleResponse: Display: 
-[2017.11.12-12.24.47:621][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.11.12-12.24.47:621][  0]LogCook: Display: Mobile HDR setting 1
-[2017.11.12-12.24.47:621][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2017.11.12-12.24.48:485][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/' took 0.01s
-[2017.11.12-12.24.49:294][  0]SourceControl: Source control is disabled
-[2017.11.12-12.24.49:295][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.17/FeaturePacks/StarterContent.upack)
-[2017.11.12-12.24.49:305][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
-[2017.11.12-12.24.49:307][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Floor_400x400.uasset"
-[2017.11.12-12.24.49:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Pillar_50x500.uasset"
-[2017.11.12-12.24.49:313][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
-[2017.11.12-12.24.49:316][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_400x200.uasset"
-[2017.11.12-12.24.49:317][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_400x300.uasset"
-[2017.11.12-12.24.49:319][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_400x400.uasset"
-[2017.11.12-12.24.49:320][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_500x500.uasset"
-[2017.11.12-12.24.49:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
-[2017.11.12-12.24.49:323][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
-[2017.11.12-12.24.49:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
-[2017.11.12-12.24.49:326][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
-[2017.11.12-12.24.49:330][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Collapse01.uasset"
-[2017.11.12-12.24.49:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Collapse02.uasset"
-[2017.11.12-12.24.49:334][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Collapse_Cue.uasset"
-[2017.11.12-12.24.49:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Explosion01.uasset"
-[2017.11.12-12.24.49:340][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Explosion02.uasset"
-[2017.11.12-12.24.49:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Explosion_Cue.uasset"
-[2017.11.12-12.24.49:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Fire01.uasset"
-[2017.11.12-12.24.49:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Fire01_Cue.uasset"
-[2017.11.12-12.24.49:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Fire_Sparks01.uasset"
-[2017.11.12-12.24.49:360][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
-[2017.11.12-12.24.49:365][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Light01.uasset"
-[2017.11.12-12.24.49:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Light01_Cue.uasset"
-[2017.11.12-12.24.49:373][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Light02.uasset"
-[2017.11.12-12.24.49:376][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Light02_Cue.uasset"
-[2017.11.12-12.24.49:382][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Smoke01.uasset"
-[2017.11.12-12.24.49:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Smoke01_Cue.uasset"
-[2017.11.12-12.24.49:387][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
-[2017.11.12-12.24.49:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Starter_Birds01.uasset"
-[2017.11.12-12.24.49:460][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Starter_Music01.uasset"
-[2017.11.12-12.24.49:464][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
-[2017.11.12-12.24.49:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Starter_Wind05.uasset"
-[2017.11.12-12.24.49:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Starter_Wind06.uasset"
-[2017.11.12-12.24.49:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Steam01.uasset"
-[2017.11.12-12.24.49:514][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Audio/Steam01_Cue.uasset"
-[2017.11.12-12.24.49:520][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
-[2017.11.12-12.24.49:523][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
-[2017.11.12-12.24.49:528][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
-[2017.11.12-12.24.49:531][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
-[2017.11.12-12.24.49:535][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
-[2017.11.12-12.24.49:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
-[2017.11.12-12.24.49:545][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
-[2017.11.12-12.24.49:552][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
-[2017.11.12-12.24.49:556][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
-[2017.11.12-12.24.49:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
-[2017.11.12-12.24.49:565][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
-[2017.11.12-12.24.49:570][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
-[2017.11.12-12.24.49:574][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
-[2017.11.12-12.24.49:584][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
-[2017.11.12-12.24.49:593][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
-[2017.11.12-12.24.49:596][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
-[2017.11.12-12.24.49:904][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
-[2017.11.12-12.24.49:909][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Maps/Advanced_Lighting.umap"
-[2017.11.12-12.24.49:913][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
-[2017.11.12-12.24.49:925][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Maps/Minimal_Default.umap"
-[2017.11.12-12.24.49:936][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
-[2017.11.12-12.24.49:970][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Maps/StarterMap.umap"
-[2017.11.12-12.24.50:028][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
-[2017.11.12-12.24.50:044][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_AssetPlatform.uasset"
-[2017.11.12-12.24.50:054][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Basic_Floor.uasset"
-[2017.11.12-12.24.50:060][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Basic_Wall.uasset"
-[2017.11.12-12.24.50:066][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
-[2017.11.12-12.24.50:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
-[2017.11.12-12.24.50:076][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
-[2017.11.12-12.24.50:081][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
-[2017.11.12-12.24.50:087][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
-[2017.11.12-12.24.50:092][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
-[2017.11.12-12.24.50:097][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
-[2017.11.12-12.24.50:103][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
-[2017.11.12-12.24.50:110][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
-[2017.11.12-12.24.50:115][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
-[2017.11.12-12.24.50:121][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
-[2017.11.12-12.24.50:127][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
-[2017.11.12-12.24.50:131][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
-[2017.11.12-12.24.50:137][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
-[2017.11.12-12.24.50:141][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Glass.uasset"
-[2017.11.12-12.24.50:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Ground_Grass.uasset"
-[2017.11.12-12.24.50:152][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
-[2017.11.12-12.24.50:158][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Ground_Moss.uasset"
-[2017.11.12-12.24.50:162][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
-[2017.11.12-12.24.50:167][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
-[2017.11.12-12.24.50:172][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
-[2017.11.12-12.24.50:177][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Metal_Copper.uasset"
-[2017.11.12-12.24.50:182][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Metal_Gold.uasset"
-[2017.11.12-12.24.50:187][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Metal_Rust.uasset"
-[2017.11.12-12.24.50:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Metal_Steel.uasset"
-[2017.11.12-12.24.50:198][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
-[2017.11.12-12.24.50:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
-[2017.11.12-12.24.50:208][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
-[2017.11.12-12.24.50:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Rock_Slate.uasset"
-[2017.11.12-12.24.50:219][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
-[2017.11.12-12.24.50:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
-[2017.11.12-12.24.50:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
-[2017.11.12-12.24.50:237][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Tech_Panel.uasset"
-[2017.11.12-12.24.50:243][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Water_Lake.uasset"
-[2017.11.12-12.24.50:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Water_Ocean.uasset"
-[2017.11.12-12.24.50:253][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
-[2017.11.12-12.24.50:258][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
-[2017.11.12-12.24.50:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Wood_Oak.uasset"
-[2017.11.12-12.24.50:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Wood_Pine.uasset"
-[2017.11.12-12.24.50:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
-[2017.11.12-12.24.50:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
-[2017.11.12-12.24.50:286][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/P_Explosion.uasset"
-[2017.11.12-12.24.50:292][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/P_Fire.uasset"
-[2017.11.12-12.24.50:296][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/P_Smoke.uasset"
-[2017.11.12-12.24.50:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/P_Sparks.uasset"
-[2017.11.12-12.24.50:306][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/P_Steam_Lit.uasset"
-[2017.11.12-12.24.50:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_Burst.uasset"
-[2017.11.12-12.24.50:315][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
-[2017.11.12-12.24.50:319][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
-[2017.11.12-12.24.50:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
-[2017.11.12-12.24.50:328][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
-[2017.11.12-12.24.50:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
-[2017.11.12-12.24.50:336][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
-[2017.11.12-12.24.50:340][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
-[2017.11.12-12.24.50:345][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
-[2017.11.12-12.24.50:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Particles/Materials/M_Spark.uasset"
-[2017.11.12-12.24.50:355][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/MaterialSphere.uasset"
-[2017.11.12-12.24.50:360][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Bush.uasset"
-[2017.11.12-12.24.50:366][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Chair.uasset"
-[2017.11.12-12.24.50:371][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_CornerFrame.uasset"
-[2017.11.12-12.24.50:377][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Couch.uasset"
-[2017.11.12-12.24.50:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Door.uasset"
-[2017.11.12-12.24.50:388][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_DoorFrame.uasset"
-[2017.11.12-12.24.50:392][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_GlassWindow.uasset"
-[2017.11.12-12.24.50:400][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
-[2017.11.12-12.24.50:405][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
-[2017.11.12-12.24.50:426][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
-[2017.11.12-12.24.50:431][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_PillarFrame.uasset"
-[2017.11.12-12.24.50:435][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_PillarFrame300.uasset"
-[2017.11.12-12.24.50:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Rock.uasset"
-[2017.11.12-12.24.50:446][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Shelf.uasset"
-[2017.11.12-12.24.50:450][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Stairs.uasset"
-[2017.11.12-12.24.50:458][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_Statue.uasset"
-[2017.11.12-12.24.50:468][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_TableRound.uasset"
-[2017.11.12-12.24.50:472][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/SM_WindowFrame.uasset"
-[2017.11.12-12.24.50:477][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Bush.uasset"
-[2017.11.12-12.24.50:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Chair.uasset"
-[2017.11.12-12.24.50:487][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Door.uasset"
-[2017.11.12-12.24.50:492][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Frame.uasset"
-[2017.11.12-12.24.50:497][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Lamp.uasset"
-[2017.11.12-12.24.50:502][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
-[2017.11.12-12.24.50:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
-[2017.11.12-12.24.50:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Rock.uasset"
-[2017.11.12-12.24.50:515][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Shelf.uasset"
-[2017.11.12-12.24.50:520][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_Statue.uasset"
-[2017.11.12-12.24.50:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
-[2017.11.12-12.24.50:529][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Props/Materials/M_TableRound.uasset"
-[2017.11.12-12.24.50:535][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Cone.uasset"
-[2017.11.12-12.24.50:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Cube.uasset"
-[2017.11.12-12.24.50:543][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
-[2017.11.12-12.24.50:549][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
-[2017.11.12-12.24.50:553][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Pipe.uasset"
-[2017.11.12-12.24.50:558][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
-[2017.11.12-12.24.50:563][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
-[2017.11.12-12.24.50:567][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Plane.uasset"
-[2017.11.12-12.24.50:571][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
-[2017.11.12-12.24.50:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Sphere.uasset"
-[2017.11.12-12.24.50:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Torus.uasset"
-[2017.11.12-12.24.50:590][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Trim.uasset"
-[2017.11.12-12.24.50:594][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
-[2017.11.12-12.24.50:599][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
-[2017.11.12-12.24.50:602][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
-[2017.11.12-12.24.50:607][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Tube.uasset"
-[2017.11.12-12.24.50:611][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
-[2017.11.12-12.24.50:615][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
-[2017.11.12-12.24.50:620][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
-[2017.11.12-12.24.50:665][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
-[2017.11.12-12.24.50:700][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
-[2017.11.12-12.24.50:746][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
-[2017.11.12-12.24.50:797][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
-[2017.11.12-12.24.50:848][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
-[2017.11.12-12.24.50:890][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
-[2017.11.12-12.24.50:938][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
-[2017.11.12-12.24.50:974][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
-[2017.11.12-12.24.51:045][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
-[2017.11.12-12.24.51:084][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
-[2017.11.12-12.24.51:130][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
-[2017.11.12-12.24.51:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
-[2017.11.12-12.24.51:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
-[2017.11.12-12.24.51:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Burst_M.uasset"
-[2017.11.12-12.24.51:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Bush_D.uasset"
-[2017.11.12-12.24.51:255][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Bush_N.uasset"
-[2017.11.12-12.24.51:262][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
-[2017.11.12-12.24.51:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
-[2017.11.12-12.24.51:278][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Chair_M.uasset"
-[2017.11.12-12.24.51:296][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Chair_N.uasset"
-[2017.11.12-12.24.51:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
-[2017.11.12-12.24.51:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
-[2017.11.12-12.24.51:382][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
-[2017.11.12-12.24.51:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
-[2017.11.12-12.24.51:464][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
-[2017.11.12-12.24.51:483][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
-[2017.11.12-12.24.51:516][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
-[2017.11.12-12.24.51:554][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
-[2017.11.12-12.24.51:596][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
-[2017.11.12-12.24.51:644][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
-[2017.11.12-12.24.51:684][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
-[2017.11.12-12.24.51:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
-[2017.11.12-12.24.51:776][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
-[2017.11.12-12.24.51:813][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
-[2017.11.12-12.24.51:844][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
-[2017.11.12-12.24.51:877][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
-[2017.11.12-12.24.51:914][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
-[2017.11.12-12.24.51:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
-[2017.11.12-12.24.51:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
-[2017.11.12-12.24.51:946][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Door_M.uasset"
-[2017.11.12-12.24.51:959][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Door_N.uasset"
-[2017.11.12-12.24.51:963][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
-[2017.11.12-12.24.51:987][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
-[2017.11.12-12.24.51:997][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
-[2017.11.12-12.24.52:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
-[2017.11.12-12.24.52:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Frame_M.uasset"
-[2017.11.12-12.24.52:034][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Frame_N.uasset"
-[2017.11.12-12.24.52:037][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Gradinet_01.uasset"
-[2017.11.12-12.24.52:103][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
-[2017.11.12-12.24.52:234][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
-[2017.11.12-12.24.52:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
-[2017.11.12-12.24.52:350][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
-[2017.11.12-12.24.52:420][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
-[2017.11.12-12.24.52:460][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
-[2017.11.12-12.24.52:470][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Lamp_M.uasset"
-[2017.11.12-12.24.52:488][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Lamp_N.uasset"
-[2017.11.12-12.24.52:551][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_MacroVariation.uasset"
-[2017.11.12-12.24.52:604][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
-[2017.11.12-12.24.52:647][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
-[2017.11.12-12.24.52:688][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
-[2017.11.12-12.24.52:705][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
-[2017.11.12-12.24.52:750][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
-[2017.11.12-12.24.52:796][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
-[2017.11.12-12.24.52:817][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
-[2017.11.12-12.24.52:850][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
-[2017.11.12-12.24.52:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
-[2017.11.12-12.24.52:919][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_RockMesh_M.uasset"
-[2017.11.12-12.24.52:950][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_RockMesh_N.uasset"
-[2017.11.12-12.24.53:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
-[2017.11.12-12.24.53:059][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
-[2017.11.12-12.24.53:087][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
-[2017.11.12-12.24.53:147][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
-[2017.11.12-12.24.53:205][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
-[2017.11.12-12.24.53:288][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
-[2017.11.12-12.24.53:355][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
-[2017.11.12-12.24.53:409][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
-[2017.11.12-12.24.53:420][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Shelf_M.uasset"
-[2017.11.12-12.24.53:439][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Shelf_N.uasset"
-[2017.11.12-12.24.53:443][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
-[2017.11.12-12.24.53:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
-[2017.11.12-12.24.53:471][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
-[2017.11.12-12.24.53:477][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Spark_Core.uasset"
-[2017.11.12-12.24.53:486][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Statue_M.uasset"
-[2017.11.12-12.24.53:496][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Statue_N.uasset"
-[2017.11.12-12.24.53:544][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_TableRound_M.uasset"
-[2017.11.12-12.24.53:576][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_TableRound_N.uasset"
-[2017.11.12-12.24.53:581][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
-[2017.11.12-12.24.53:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
-[2017.11.12-12.24.53:599][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
-[2017.11.12-12.24.53:609][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
-[2017.11.12-12.24.53:623][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
-[2017.11.12-12.24.53:642][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
-[2017.11.12-12.24.53:660][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Water_M.uasset"
-[2017.11.12-12.24.53:680][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Water_N.uasset"
-[2017.11.12-12.24.53:716][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
-[2017.11.12-12.24.53:750][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
-[2017.11.12-12.24.53:774][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
-[2017.11.12-12.24.53:823][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
-[2017.11.12-12.24.53:868][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
-[2017.11.12-12.24.53:934][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
-[2017.11.12-12.24.53:963][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
-[2017.11.12-12.24.54:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
-[2017.11.12-12.24.54:044][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
-[2017.11.12-12.24.54:212][  0]LogRenderer: Reallocating scene render targets to support 256x256 Format 10 NumSamples 1 (Frame:1).
-[2017.11.12-12.24.54:433][  0]LogSavePackage: Save=29.10ms
-[2017.11.12-12.24.54:433][  0]LogSavePackage: Moving '../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Saved/Floor_400x4000CBC96544CC11FB35DDABE9E5EDE5E81.tmp' to '../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Floor_400x400.uasset'
-[2017.11.12-12.24.54:443][  0]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/StarterContent/Architecture/Floor_400x400.uasset
-[2017.11.12-12.24.54:444][  0]LogFeaturePack: Warning: Inserted 1 feature packs
-[2017.11.12-12.24.54:448][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.11.12-12.24.54:450][  0]LightingResults: New page: Lighting Build
-[2017.11.12-12.24.54:635][  0]MapCheck: New page: Map Check
-[2017.11.12-12.24.54:635][  0]LightingResults: New page: Lighting Build
-[2017.11.12-12.24.55:808][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2017.11.12-12.24.55:826][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.11.12-12.24.55:860][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.11.12-12.24.55:965][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 105.121ms to complete.
-[2017.11.12-12.24.55:965][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 1.517
-[2017.11.12-12.24.56:223][  0]LogCollectionManager: Loaded 0 collections in 0.001632 seconds
-[2017.11.12-12.24.56:343][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Saved/Collections/' took 0.01s
-[2017.11.12-12.24.56:343][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Developers/Leszek/Collections/' took 0.01s
-[2017.11.12-12.24.56:343][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Collections/' took 0.01s
-[2017.11.12-12.24.56:343][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2017.11.12-12.24.56:368][  0]LogContentBrowser: Native class hierarchy populated in 0.0240 seconds. Added 2386 classes and 500 folders.
-[2017.11.12-12.24.56:508][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2017.11.12-12.24.56:613][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
-[2017.11.12-12.24.56:994][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
-[2017.11.12-12.24.57:031][  0]LogSlate: Took 0.000220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.11.12-12.24.57:033][  0]LogSlate: Took 0.000201 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.11.12-12.24.57:040][  0]LogSlate: Took 0.001226 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.11.12-12.24.57:096][  0]LogRenderer: Reallocating scene render targets to support 964x488 Format 10 NumSamples 1 (Frame:1).
-[2017.11.12-12.24.57:174][  0]LogSlate: Took 0.000398 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.11.12-12.24.57:462][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0022 seconds. Added 1 classes and 2 folders.
-[2017.11.12-12.24.57:463][  0]LogLoad: (Engine Initialization) Total time: 30.99 seconds
-[2017.11.12-12.24.57:463][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2017.11.12-12.24.57:464][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
-[2017.11.12-12.24.57:897][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.11.12-12.24.58:300][  4]LogAssetRegistry: Asset discovery search completed in 24.4742 seconds
-[2017.11.12-12.24.58:305][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2017.11.12-12.24.58:305][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000137 seconds (updated 0 objects)
-[2017.11.12-12.25.17:326][ 93]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0018 seconds. Added 2 classes and 3 folders.
-[2017.11.12-12.26.14:009][337]LogSlate: Took 0.000230 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.11.12-12.26.14:028][337]Cmd: MAP LOAD FILE="../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.11.12-12.26.14:028][337]LightingResults: New page: Lighting Build
-[2017.11.12-12.26.14:029][337]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
-[2017.11.12-12.26.14:029][337]MapCheck: New page: Map Check
-[2017.11.12-12.26.14:030][337]LightingResults: New page: Lighting Build
-[2017.11.12-12.26.14:075][337]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2017.11.12-12.26.14:081][337]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.11.12-12.26.14:105][337]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.11.12-12.26.14:170][337]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 64.19ms to complete.
-[2017.11.12-12.26.14:171][337]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.144
-[2017.11.12-12.26.29:906][245]LogTemp: Repeating last play command: Selected Viewport
-[2017.11.12-12.26.29:993][245]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2017.11.12-12.26.29:993][245]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.11.12-12.26.29:993][245]PIE: New page: PIE session: FirstPersonExampleMap (12 Nov 2017 12:26:29)
-[2017.11.12-12.26.29:993][245]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2017.11.12-12.26.30:007][245]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013598s)
-[2017.11.12-12.26.30:008][245]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2017.11.12-12.26.30:008][245]LogPlayLevel: PIE: World Init took: (0.000922s)
-[2017.11.12-12.26.30:008][245]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.014949s)
-[2017.11.12-12.26.30:022][245]LogInit: XAudio2 using 'Speakers / Headphones (Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.11.12-12.26.30:036][245]LogInit: FAudioDevice initialized.
-[2017.11.12-12.26.30:091][245]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2017.11.12-12.26.30:104][245]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2017.11.12-12.26.30
-[2017.11.12-12.26.30:105][245]LogWorld: Bringing up level for play took: 0.008136
-[2017.11.12-12.26.30:224][245]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0018 seconds. Added 11 classes and 0 folders.
-[2017.11.12-12.26.30:226][245]PIE: Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.627
-[2017.11.12-12.26.30:227][245]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2017.11.12-12.26.33:188][414]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2017.11.12-12.26.33:221][414]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
-[2017.11.12-12.27.53:940][947]Cmd: CLOSE_SLATE_MAINFRAME
-[2017.11.12-12.27.53:959][947]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.11.12-12.27.54:122][948]Cmd: QUIT_EDITOR
-[2017.11.12-12.27.55:094][948]LogExit: Preparing to exit.
-[2017.11.12-12.27.55:740][948]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/' was aborted.
-[2017.11.12-12.27.55:782][948]LogExit: Editor shut down
-[2017.11.12-12.27.55:787][948]LogExit: Transaction tracking system shut down
-[2017.11.12-12.27.56:000][948]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.11.12-12.27.56:000][948]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/' was aborted.
-[2017.11.12-12.27.56:001][948]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.11.12-12.27.56:001][948]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2017.11.12-12.27.56:001][948]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2017.11.12-12.27.56:041][948]LogExit: Object subsystem successfully closed.
-[2017.11.12-12.27.56:064][948]LogD3D11RHI: Shutdown
-[2017.11.12-12.27.56:064][948]LogD3D11RHI: CleanupD3DDevice
-[2017.11.12-12.27.56:132][948]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.11.12-12.27.56:156][948]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (534)
-[2017.11.12-12.27.56:156][948]LogModuleManager: Shutting down and abandoning module WorldBrowser (532)
-[2017.11.12-12.27.56:156][948]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (530)
-[2017.11.12-12.27.56:156][948]LogModuleManager: Shutting down and abandoning module SceneOutliner (528)
-[2017.11.12-12.27.56:156][948]LogModuleManager: Shutting down and abandoning module AddContentDialog (526)
-[2017.11.12-12.27.56:156][948]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.17/FeaturePacks/' was aborted.
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module WidgetCarousel (525)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module EditorWidgets (522)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module CollectionManager (520)
-[2017.11.12-12.27.56:157][948]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Collections/' was aborted.
-[2017.11.12-12.27.56:157][948]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Developers/Leszek/Collections/' was aborted.
-[2017.11.12-12.27.56:157][948]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Saved/Collections/' was aborted.
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module StatsViewer (518)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module FoliageEdit (516)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module LandscapeEditor (514)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module MeshPaintMode (512)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (510)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module ActorPickerMode (508)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module GeometryMode (506)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module TextureAlignMode (504)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module BspMode (502)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (500)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module HardwareSurvey (498)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (496)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module AutomationWorker (494)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (492)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (490)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module PlacementMode (489)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (486)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (484)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (482)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (480)
-[2017.11.12-12.27.56:157][948]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (478)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module Media (477)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (474)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module CharacterAI (472)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module AudioCapture (470)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module SequenceRecorder (469)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module SmartSnapping (466)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module SessionServices (464)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module ViewportSnapping (462)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module ViewportInteraction (460)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module ClothPainter (458)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module LogVisualizer (456)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module IntroTutorials (454)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (453)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (450)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (448)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (446)
-[2017.11.12-12.27.56:158][948]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (445)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (442)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (440)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (438)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module InputBindingEditor (436)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module MergeActors (434)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module SizeMap (432)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module TreeMap (430)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module ReferenceViewer (428)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (426)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module LocalizationService (425)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module HardwareTargeting (422)
-[2017.11.12-12.27.56:854][948]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (420)
-[2017.11.12-12.27.56:855][948]LogModuleManager: Shutting down and abandoning module UndoHistory (418)
-[2017.11.12-12.27.56:855][948]LogModuleManager: Shutting down and abandoning module XmlParser (416)
-[2017.11.12-12.27.56:855][948]LogModuleManager: Shutting down and abandoning module Blutility (414)
-[2017.11.12-12.27.56:855][948]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (412)
-[2017.11.12-12.27.56:855][948]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (411)
-[2017.11.12-12.27.56:855][948]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (408)
-[2017.11.12-12.27.56:856][948]LogModuleManager: Shutting down and abandoning module SettingsEditor (406)
-[2017.11.12-12.27.56:856][948]LogModuleManager: Shutting down and abandoning module ProjectLauncher (404)
-[2017.11.12-12.27.56:856][948]LogModuleManager: Shutting down and abandoning module SessionFrontend (402)
-[2017.11.12-12.27.56:856][948]LogModuleManager: Shutting down and abandoning module ProfilerClient (400)
-[2017.11.12-12.27.56:856][948]LogModuleManager: Shutting down and abandoning module DeviceManager (398)
-[2017.11.12-12.27.56:856][948]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (397)
-[2017.11.12-12.27.56:909][948]LogModuleManager: Shutting down and abandoning module AutomationController (394)
-[2017.11.12-12.27.56:909][948]LogModuleManager: Shutting down and abandoning module AutomationWindow (392)
-[2017.11.12-12.27.56:909][948]LogModuleManager: Shutting down and abandoning module Layers (390)
-[2017.11.12-12.27.56:909][948]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (388)
-[2017.11.12-12.27.56:909][948]LogModuleManager: Shutting down and abandoning module DetailCustomizations (386)
-[2017.11.12-12.27.56:910][948]LogModuleManager: Shutting down and abandoning module PackagesDialog (384)
-[2017.11.12-12.27.56:910][948]LogModuleManager: Shutting down and abandoning module Persona (382)
-[2017.11.12-12.27.56:910][948]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (381)
-[2017.11.12-12.27.56:910][948]LogModuleManager: Shutting down and abandoning module AnimGraph (379)
-[2017.11.12-12.27.56:910][948]LogModuleManager: Shutting down and abandoning module Kismet (376)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module ClassViewer (374)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module Toolbox (372)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module ModuleUI (370)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module MovieSceneTools (368)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module OutputLog (366)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module GammaUI (364)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module Documentation (362)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (360)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module MovieScene (358)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module Niagara (356)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module NiagaraEditor (355)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (352)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module LauncherPlatform (350)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module AnalyticsET (348)
-[2017.11.12-12.27.56:912][948]LogModuleManager: Shutting down and abandoning module PortalServices (346)
-[2017.11.12-12.27.56:913][948]LogModuleManager: Shutting down and abandoning module PortalRpc (344)
-[2017.11.12-12.27.56:913][948]LogModuleManager: Shutting down and abandoning module MessagingRpc (342)
-[2017.11.12-12.27.56:913][948]LogModuleManager: Shutting down and abandoning module AIModule (340)
-[2017.11.12-12.27.56:913][948]LogModuleManager: Shutting down and abandoning module GameplayDebugger (339)
-[2017.11.12-12.27.56:913][948]LogModuleManager: Shutting down and abandoning module AITestSuite (337)
-[2017.11.12-12.27.56:913][948]LogModuleManager: Shutting down and abandoning module ProfilerService (334)
-[2017.11.12-12.27.56:947][948]LogModuleManager: Shutting down and abandoning module TaskGraph (332)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module SteamVRController (330)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (328)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (326)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module OculusInput (324)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (322)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (320)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module CableComponent (318)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (316)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module AndroidPermission (314)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (310)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module HTML5Networking (308)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module AlembicImporter (306)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module AlembicLibrary (305)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module GeometryCache (304)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (303)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (298)
-[2017.11.12-12.27.56:948][948]LogModuleManager: Shutting down and abandoning module PluginBrowser (296)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (294)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (292)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module DesktopPlatform (291)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module UObjectPlugin (288)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (286)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (284)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module GitSourceControl (282)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module SourceControl (281)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (278)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (276)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (274)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module Paper2DEditor (272)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module MeshPaint (271)
-[2017.11.12-12.27.56:949][948]LogModuleManager: Shutting down and abandoning module LevelEditor (269)
-[2017.11.12-12.27.56:951][948]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (268)
-[2017.11.12-12.27.56:951][948]LogModuleManager: Shutting down and abandoning module MainFrame (266)
-[2017.11.12-12.27.56:951][948]LogModuleManager: Shutting down and abandoning module HotReload (265)
-[2017.11.12-12.27.56:952][948]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (260)
-[2017.11.12-12.27.56:953][948]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (258)
-[2017.11.12-12.27.56:953][948]LogModuleManager: Shutting down and abandoning module PhysXVehicles (256)
-[2017.11.12-12.27.56:953][948]LogModuleManager: Shutting down and abandoning module OculusEditor (254)
-[2017.11.12-12.27.56:953][948]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (252)
-[2017.11.12-12.27.56:953][948]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (250)
-[2017.11.12-12.27.56:953][948]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (248)
-[2017.11.12-12.27.56:953][948]LogModuleManager: Shutting down and abandoning module UdpMessaging (246)
-[2017.11.12-12.27.57:053][948]LogModuleManager: Shutting down and abandoning module TcpMessaging (244)
-[2017.11.12-12.27.57:154][948]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (242)
-[2017.11.12-12.27.57:154][948]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (240)
-[2017.11.12-12.27.57:154][948]LogModuleManager: Shutting down and abandoning module FacialAnimation (238)
-[2017.11.12-12.27.57:154][948]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (236)
-[2017.11.12-12.27.57:154][948]LogModuleManager: Shutting down and abandoning module GraphEditor (235)
-[2017.11.12-12.27.57:154][948]LogModuleManager: Shutting down and abandoning module ContentBrowser (233)
-[2017.11.12-12.27.57:156][948]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (230)
-[2017.11.12-12.27.57:156][948]LogModuleManager: Shutting down and abandoning module Paper2D (228)
-[2017.11.12-12.27.57:156][948]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (226)
-[2017.11.12-12.27.57:156][948]LogModuleManager: Shutting down and abandoning module WmfMedia (224)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module PacketHandler (222)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (220)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (218)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module Overlay (216)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module OverlayEditor (215)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module MediaAssets (212)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module VREditor (210)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module StringTableEditor (208)
-[2017.11.12-12.27.57:160][948]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (206)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (204)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module FunctionalTesting (202)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (200)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (199)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module UMG (196)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module UMGEditor (195)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module Sequencer (194)
-[2017.11.12-12.27.57:161][948]LogModuleManager: Shutting down and abandoning module MessageLog (191)
-[2017.11.12-12.27.57:162][948]LogModuleManager: Shutting down and abandoning module SlateReflector (186)
-[2017.11.12-12.27.57:162][948]LogModuleManager: Shutting down and abandoning module Slate (184)
-[2017.11.12-12.27.57:162][948]LogModuleManager: Shutting down and abandoning module EditorStyle (182)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module MRMesh (180)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (178)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (176)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module XAudio2 (174)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module Networking (172)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module Core (168)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module LevelSequence (162)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module MeshUtilities (160)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (159)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (158)
-[2017.11.12-12.27.57:168][948]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (157)
-[2017.11.12-12.27.57:169][948]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (155)
-[2017.11.12-12.27.57:169][948]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (153)
-[2017.11.12-12.27.57:169][948]LogModuleManager: Shutting down and abandoning module MaterialBaking (149)
-[2017.11.12-12.27.57:169][948]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (146)
-[2017.11.12-12.27.57:170][948]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
-[2017.11.12-12.27.57:225][948]LogDerivedDataCache: Shutdown
-[2017.11.12-12.27.57:225][948]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
-[2017.11.12-12.27.57:225][948]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
-[2017.11.12-12.27.57:225][948]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
-[2017.11.12-12.27.57:225][948]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
-[2017.11.12-12.27.57:225][948]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module Messaging (101)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
-[2017.11.12-12.27.57:226][948]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module InputCore (60)
-[2017.11.12-12.27.57:227][948]LogModuleManager: Shutting down and abandoning module Settings (58)
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module PhysXCooking (56)
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module SteamVR (54)
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module OculusHMD (52)
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2017.11.12-12.27.57:228][948]LogOnline: Display: Unloading online subsystem: NULL
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2017.11.12-12.27.57:228][948]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2017.11.12-12.27.57:228][948]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.11.12-12.27.57:228][948]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B94AE1177-47F9-9627-B918-B18D936B80F6%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.17.2-3658906%2B%2B%2BUE4%2BRelease-4.17&UserID=a202bbab4bfb72a6c72ab59bf5105770%7Ca6b7376151474e159cf10430cd50646e%7C20bc636a-a4d7-41a8-a2dc-7238c7cddcf0&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.11.12-12.27.57:246][948]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2017.11.12-12.27.57:249][948]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2017.11.12-12.27.57:249][948]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2017.11.12-12.27.57:249][948]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2017.11.12-12.27.57:249][948]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2017.11.12-12.27.57:249][948]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2017.11.12-12.27.57:250][948]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2017.11.12-12.27.57:250][948]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.11.12-12.27.57:251][948]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.11.12-12.27.57:259][948]LogExit: Exiting.
-[2017.11.12-12.27.57:276][948]Log file closed, 11/12/17 12:27:57
+[2017.11.12-16.56.46:065][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.12-16.56.46:065][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.11.12-16.56.46:074][  0]LogInit: Computer: DESKTOP-UTLPHC3
+[2017.11.12-16.56.46:074][  0]LogInit: User: Leszek
+[2017.11.12-16.56.46:074][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.11.12-16.56.46:074][  0]LogInit: High frequency timer resolution =2.742183 MHz
+[2017.11.12-16.56.46:074][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.11.12-16.56.46:074][  0]LogMemory: Platform Memory Stats for Windows
+[2017.11.12-16.56.46:074][  0]LogMemory: Process Physical Memory: 281.12 MB used, 281.12 MB peak
+[2017.11.12-16.56.46:074][  0]LogMemory: Process Virtual Memory: 282.23 MB used, 282.23 MB peak
+[2017.11.12-16.56.46:074][  0]LogMemory: Physical Memory: 7229.68 MB used,  9006.27 MB free, 16235.95 MB total
+[2017.11.12-16.56.46:074][  0]LogMemory: Virtual Memory: 710.64 MB used,  9006.27 MB free, 134217728.00 MB total
+[2017.11.12-16.56.46:493][  0]LogInit: Using OS detected language (en-US).
+[2017.11.12-16.56.46:493][  0]LogInit: Using OS detected locale (en-GB).
+[2017.11.12-16.56.46:496][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.11.12-16.56.47:192][  0]LogD3D11RHI: D3D11 adapters:
+[2017.11.12-16.56.47:242][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2017.11.12-16.56.47:242][  0]LogD3D11RHI:       4031/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.11.12-16.56.47:248][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2017.11.12-16.56.47:248][  0]LogD3D11RHI:       128/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.11.12-16.56.47:250][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.11.12-16.56.47:250][  0]LogD3D11RHI:       0/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.11.12-16.56.47:251][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.11.12-16.56.47:257][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.11.12-16.56.47:257][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2017.11.12-16.56.47:257][  0]LogWindows: EnumDisplayDevices:
+[2017.11.12-16.56.47:257][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2017.11.12-16.56.47:258][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2017.11.12-16.56.47:258][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2017.11.12-16.56.47:258][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.11.12-16.56.47:258][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2017.11.12-16.56.47:258][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.11.12-16.56.47:258][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.11.12-16.56.47:258][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.11.12-16.56.47:280][  0]LogD3D11RHI: Async texture creation enabled
+[2017.11.12-16.56.47:295][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.11.12-16.56.47:296][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Intermediate/Shaders/WorkingDirectory/19056/).
+[2017.11.12-16.56.47:297][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Leszek/AppData/Local/Temp/UnrealShaderWorkingDir/330A462D49317AEDDD4EBC90BE70285C/'.
+[2017.11.12-16.56.47:297][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2017.11.12-16.56.48:169][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2017.11.12-16.56.48:234][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2017.11.12-16.56.48:295][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2017.11.12-16.56.48:357][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2017.11.12-16.56.48:419][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2017.11.12-16.56.48:484][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2017.11.12-16.56.48:545][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.11.12-16.56.48:608][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2017.11.12-16.56.48:664][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2017.11.12-16.56.48:727][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2017.11.12-16.56.48:788][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2017.11.12-16.56.48:849][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2017.11.12-16.56.48:911][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2017.11.12-16.56.48:973][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2017.11.12-16.56.49:034][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2017.11.12-16.56.49:155][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2017.11.12-16.56.49:155][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.11.12-16.56.49:209][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2017.11.12-16.56.49:324][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2017.11.12-16.56.49:380][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2017.11.12-16.56.49:443][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2017.11.12-16.56.49:505][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.11.12-16.56.49:566][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2017.11.12-16.56.49:626][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2017.11.12-16.56.49:626][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2017.11.12-16.56.50:307][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2017.11.12-16.56.50:379][  0]LogDerivedDataCache: Loaded boot cache 0.07s 93MB C:/Users/Leszek/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.11.12-16.56.50:379][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Leszek/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2017.11.12-16.56.50:379][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.11.12-16.56.50:379][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.11.12-16.56.50:379][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.11.12-16.56.50:379][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.11.12-16.56.50:393][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.11.12-16.56.50:406][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Leszek/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.11.12-16.56.50:415][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.11.12-16.56.50:415][  0]LogSlate: Using Freetype 2.6.0
+[2017.11.12-16.56.50:416][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.12-16.56.50:416][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.12-16.56.50:672][  0]LogAssetRegistry: FAssetRegistry took 0.0261 seconds to start up
+[2017.11.12-16.56.50:795][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.12-16.56.51:237][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.11.12-16.56.51:290][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.11.12-16.56.51:290][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.11.12-16.56.51:290][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2017.11.12-16.56.51:290][  0]LogMeshReduction: No automatic mesh merging module available
+[2017.11.12-16.56.51:290][  0]LogMeshMerging: No automatic mesh merging module available
+[2017.11.12-16.56.51:291][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.11.12-16.56.51:713][  0]LogNetVersion: Throne_Room , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 874174091)
+[2017.11.12-16.56.51:944][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 2 prioritized culture(s) in 0.041663 seconds
+[2017.11.12-16.56.51:949][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2017.11.12-16.56.51:949][  0]LogUObjectAllocator: 7529104 out of 0 bytes used by permanent object pool.
+[2017.11.12-16.56.51:949][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.11.12-16.56.52:035][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.11.12-16.56.55:140][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2017.11.12-16.56.55:178][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.11.12-16.56.55:227][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.11.12-16.56.56:299][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.11.12-16.56.56:831][  0]SourceControl: Source control is disabled
+[2017.11.12-16.56.56:831][  0]SourceControl: Source control is disabled
+[2017.11.12-16.56.56:894][  0]SourceControl: Source control is disabled
+[2017.11.12-16.56.56:955][  0]SourceControl: Source control is disabled
+[2017.11.12-16.56.57:719][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.11.12-16.56.58:032][  0]LogOcInput: OculusInput pre-init called
+[2017.11.12-16.56.58:703][  0]LogEngine: Initializing Engine...
+[2017.11.12-16.56.58:705][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.11.12-16.56.58:920][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.11.12-16.56.58:920][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.11.12-16.56.59:087][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.11.12-16.56.59:096][  0]LogInit: XAudio2 using 'Speakers / Headphones (Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.11.12-16.57.00:197][  0]LogInit: FAudioDevice initialized.
+[2017.11.12-16.57.00:254][  0]LogDerivedDataCache: Saved boot cache 0.06s 93MB C:/Users/Leszek/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.11.12-16.57.00:261][  0]LogInit: Texture streaming: Enabled
+[2017.11.12-16.57.00:419][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.11.12-16.57.00:705][  0]LogInit: Transaction tracking system initialized
+[2017.11.12-16.57.01:125][  0]BlueprintLog: New page: Editor Load
+[2017.11.12-16.57.02:355][  0]LocalizationService: Localization service is disabled
+[2017.11.12-16.57.03:046][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2017.11.12-16.57.03:046][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2017.11.12-16.57.03:047][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2017.11.12-16.57.03:297][  0]LogConsoleResponse: Display: 
+[2017.11.12-16.57.03:504][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.11.12-16.57.03:504][  0]LogCook: Display: Mobile HDR setting 1
+[2017.11.12-16.57.03:504][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2017.11.12-16.57.04:192][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/' took 0.01s
+[2017.11.12-16.57.04:904][  0]SourceControl: Source control is disabled
+[2017.11.12-16.57.04:904][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.11.12-16.57.04:905][  0]LightingResults: New page: Lighting Build
+[2017.11.12-16.57.04:961][  0]MapCheck: New page: Map Check
+[2017.11.12-16.57.04:961][  0]LightingResults: New page: Lighting Build
+[2017.11.12-16.57.05:425][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.11.12-16.57.05:438][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.11.12-16.57.05:458][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.11.12-16.57.05:523][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 63.731ms to complete.
+[2017.11.12-16.57.05:523][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.618
+[2017.11.12-16.57.05:587][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.11.12-16.57.05:678][  0]LogCollectionManager: Loaded 0 collections in 0.001386 seconds
+[2017.11.12-16.57.05:771][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Saved/Collections/' took 0.01s
+[2017.11.12-16.57.05:771][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Developers/Leszek/Collections/' took 0.01s
+[2017.11.12-16.57.05:771][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Collections/' took 0.01s
+[2017.11.12-16.57.05:771][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2017.11.12-16.57.05:779][  0]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 2400 classes and 506 folders.
+[2017.11.12-16.57.05:869][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.11.12-16.57.05:908][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.11.12-16.57.05:966][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.11.12-16.57.05:987][  0]LogSlate: Took 0.000192 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.11.12-16.57.05:989][  0]LogSlate: Took 0.000272 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.11.12-16.57.05:994][  0]LogSlate: Took 0.000183 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.11.12-16.57.06:087][  0]LogRenderer: Reallocating scene render targets to support 964x460 Format 10 NumSamples 1 (Frame:1).
+[2017.11.12-16.57.06:308][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.11.12-16.57.06:308][  0]LogLoad: (Engine Initialization) Total time: 21.99 seconds
+[2017.11.12-16.57.06:308][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2017.11.12-16.57.06:308][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.11.12-16.57.06:348][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.11.12-16.57.06:390][  0]LogSlate: Took 0.000245 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.12-16.57.06:413][  1]LogAssetRegistry: Asset discovery search completed in 15.7634 seconds
+[2017.11.12-16.57.06:415][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.11.12-16.57.06:415][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000054 seconds (updated 0 objects)
+[2017.11.12-16.57.07:337][ 55]LogSlate: Took 0.000333 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.12-17.02.44:169][261]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.11.12-17.02.44:172][261]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.11.12-17.02.44:324][262]Cmd: QUIT_EDITOR
+[2017.11.12-17.02.44:365][262]LogExit: Preparing to exit.
+[2017.11.12-17.02.45:561][262]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/' was aborted.
+[2017.11.12-17.02.45:582][262]LogExit: Editor shut down
+[2017.11.12-17.02.45:586][262]LogExit: Transaction tracking system shut down
+[2017.11.12-17.02.45:838][262]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.11.12-17.02.45:839][262]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/' was aborted.
+[2017.11.12-17.02.45:839][262]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.11.12-17.02.45:839][262]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2017.11.12-17.02.45:839][262]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2017.11.12-17.02.45:884][262]LogExit: Object subsystem successfully closed.
+[2017.11.12-17.02.45:902][262]LogD3D11RHI: Shutdown
+[2017.11.12-17.02.45:902][262]LogD3D11RHI: CleanupD3DDevice
+[2017.11.12-17.02.45:967][262]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.11.12-17.02.45:988][262]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (536)
+[2017.11.12-17.02.45:988][262]LogModuleManager: Shutting down and abandoning module SceneOutliner (534)
+[2017.11.12-17.02.45:988][262]LogModuleManager: Shutting down and abandoning module AddContentDialog (532)
+[2017.11.12-17.02.45:988][262]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.17/FeaturePacks/' was aborted.
+[2017.11.12-17.02.45:988][262]LogModuleManager: Shutting down and abandoning module WidgetCarousel (531)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module EditorWidgets (528)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module CollectionManager (526)
+[2017.11.12-17.02.45:989][262]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Collections/' was aborted.
+[2017.11.12-17.02.45:989][262]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Content/Developers/Leszek/Collections/' was aborted.
+[2017.11.12-17.02.45:989][262]LogDirectoryWatcher: A directory notification for 'C:/Users/Leszek/Documents/3D_Repo/ThroneRoom Level Map/Throne_Room/Saved/Collections/' was aborted.
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module StatsViewer (524)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module FoliageEdit (522)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module LandscapeEditor (520)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module MeshPaintMode (518)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (516)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module ActorPickerMode (514)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module GeometryMode (512)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module TextureAlignMode (510)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module BspMode (508)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (506)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module HardwareSurvey (504)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (502)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module AutomationWorker (500)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (498)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (496)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module PlacementMode (495)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (492)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (490)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (488)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (486)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (484)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module Media (483)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (480)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module CharacterAI (478)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module AudioCapture (476)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module SequenceRecorder (475)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module SmartSnapping (472)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module SessionServices (470)
+[2017.11.12-17.02.45:989][262]LogModuleManager: Shutting down and abandoning module ViewportSnapping (468)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module ViewportInteraction (466)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module ClothPainter (464)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module LogVisualizer (462)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module IntroTutorials (460)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (459)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (456)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (454)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (452)
+[2017.11.12-17.02.45:990][262]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (451)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (448)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (446)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (444)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module InputBindingEditor (442)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module MergeActors (440)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module SizeMap (438)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module TreeMap (436)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module ReferenceViewer (434)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (432)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module LocalizationService (431)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module HardwareTargeting (428)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (426)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module UndoHistory (424)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module XmlParser (422)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module Blutility (420)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (418)
+[2017.11.12-17.02.46:976][262]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (417)
+[2017.11.12-17.02.46:977][262]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (414)
+[2017.11.12-17.02.46:977][262]LogModuleManager: Shutting down and abandoning module SettingsEditor (412)
+[2017.11.12-17.02.46:977][262]LogModuleManager: Shutting down and abandoning module ProjectLauncher (410)
+[2017.11.12-17.02.46:977][262]LogModuleManager: Shutting down and abandoning module SessionFrontend (408)
+[2017.11.12-17.02.46:977][262]LogModuleManager: Shutting down and abandoning module ProfilerClient (406)
+[2017.11.12-17.02.46:977][262]LogModuleManager: Shutting down and abandoning module DeviceManager (404)
+[2017.11.12-17.02.46:977][262]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (403)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module AutomationController (400)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module AutomationWindow (398)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module Layers (396)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (394)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module DetailCustomizations (392)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module PackagesDialog (390)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module Persona (388)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (387)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module AnimGraph (385)
+[2017.11.12-17.02.47:029][262]LogModuleManager: Shutting down and abandoning module Kismet (382)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module ClassViewer (380)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module Toolbox (378)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module ModuleUI (376)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module MovieSceneTools (374)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module OutputLog (372)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module GammaUI (370)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module Documentation (368)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (366)
+[2017.11.12-17.02.47:030][262]LogModuleManager: Shutting down and abandoning module MovieScene (364)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module Niagara (362)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module NiagaraEditor (361)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (358)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module LauncherPlatform (356)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module AnalyticsET (354)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module PortalServices (352)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module PortalRpc (350)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module MessagingRpc (348)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module AIModule (346)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module GameplayDebugger (345)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module AITestSuite (343)
+[2017.11.12-17.02.47:031][262]LogModuleManager: Shutting down and abandoning module ProfilerService (340)
+[2017.11.12-17.02.47:076][262]LogModuleManager: Shutting down and abandoning module TaskGraph (338)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module SubstanceSource (336)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module SubstanceEditor (334)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module SteamVRController (332)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (330)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (328)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module OculusInput (326)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (324)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (322)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module CableComponent (320)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (318)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module AndroidPermission (316)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (312)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module HTML5Networking (310)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module AlembicImporter (308)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module AlembicLibrary (307)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module GeometryCache (306)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (305)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (300)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module PluginBrowser (298)
+[2017.11.12-17.02.47:077][262]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (296)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (294)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module DesktopPlatform (293)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module UObjectPlugin (290)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (288)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (286)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module GitSourceControl (284)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module SourceControl (283)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (280)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (278)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (276)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module Paper2DEditor (274)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module MeshPaint (273)
+[2017.11.12-17.02.47:078][262]LogModuleManager: Shutting down and abandoning module LevelEditor (271)
+[2017.11.12-17.02.47:079][262]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (270)
+[2017.11.12-17.02.47:079][262]LogModuleManager: Shutting down and abandoning module MainFrame (268)
+[2017.11.12-17.02.47:080][262]LogModuleManager: Shutting down and abandoning module HotReload (267)
+[2017.11.12-17.02.47:080][262]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (262)
+[2017.11.12-17.02.47:080][262]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (260)
+[2017.11.12-17.02.47:080][262]LogModuleManager: Shutting down and abandoning module PhysXVehicles (258)
+[2017.11.12-17.02.47:081][262]LogModuleManager: Shutting down and abandoning module OculusEditor (256)
+[2017.11.12-17.02.47:081][262]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (254)
+[2017.11.12-17.02.47:081][262]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (252)
+[2017.11.12-17.02.47:081][262]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (250)
+[2017.11.12-17.02.47:081][262]LogModuleManager: Shutting down and abandoning module UdpMessaging (248)
+[2017.11.12-17.02.47:181][262]LogModuleManager: Shutting down and abandoning module TcpMessaging (246)
+[2017.11.12-17.02.47:282][262]LogModuleManager: Shutting down and abandoning module SubstanceCore (244)
+[2017.11.12-17.02.47:282][262]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (242)
+[2017.11.12-17.02.47:282][262]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (240)
+[2017.11.12-17.02.47:282][262]LogModuleManager: Shutting down and abandoning module FacialAnimation (238)
+[2017.11.12-17.02.47:282][262]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (236)
+[2017.11.12-17.02.47:282][262]LogModuleManager: Shutting down and abandoning module GraphEditor (235)
+[2017.11.12-17.02.47:282][262]LogModuleManager: Shutting down and abandoning module ContentBrowser (233)
+[2017.11.12-17.02.47:284][262]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (230)
+[2017.11.12-17.02.47:284][262]LogModuleManager: Shutting down and abandoning module Paper2D (228)
+[2017.11.12-17.02.47:284][262]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (226)
+[2017.11.12-17.02.47:284][262]LogModuleManager: Shutting down and abandoning module WmfMedia (224)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module PacketHandler (222)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (220)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (218)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module Overlay (216)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module OverlayEditor (215)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module MediaAssets (212)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module VREditor (210)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module StringTableEditor (208)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (206)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (204)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module FunctionalTesting (202)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (200)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (199)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module UMG (196)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module UMGEditor (195)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module Sequencer (194)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module MessageLog (191)
+[2017.11.12-17.02.47:287][262]LogModuleManager: Shutting down and abandoning module SlateReflector (186)
+[2017.11.12-17.02.47:288][262]LogModuleManager: Shutting down and abandoning module Slate (184)
+[2017.11.12-17.02.47:288][262]LogModuleManager: Shutting down and abandoning module EditorStyle (182)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module MRMesh (180)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (178)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (176)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module XAudio2 (174)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module Networking (172)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module Core (168)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module LevelSequence (162)
+[2017.11.12-17.02.47:292][262]LogModuleManager: Shutting down and abandoning module MeshUtilities (160)
+[2017.11.12-17.02.47:293][262]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (159)
+[2017.11.12-17.02.47:293][262]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (158)
+[2017.11.12-17.02.47:293][262]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (157)
+[2017.11.12-17.02.47:293][262]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (155)
+[2017.11.12-17.02.47:293][262]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (153)
+[2017.11.12-17.02.47:293][262]LogModuleManager: Shutting down and abandoning module MaterialBaking (149)
+[2017.11.12-17.02.47:293][262]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (146)
+[2017.11.12-17.02.47:294][262]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.11.12-17.02.47:323][262]LogDerivedDataCache: Shutdown
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.11.12-17.02.47:324][262]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module PhysXCooking (56)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module SteamVR (54)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module OculusHMD (52)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.11.12-17.02.47:325][262]LogOnline: Display: Unloading online subsystem: NULL
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.11.12-17.02.47:325][262]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.11.12-17.02.47:325][262]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.11.12-17.02.47:325][262]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B8D102020-4D1D-DE71-49B5-F29FCD1D9522%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.17.2-3658906%2B%2B%2BUE4%2BRelease-4.17&UserID=a202bbab4bfb72a6c72ab59bf5105770%7Ca6b7376151474e159cf10430cd50646e%7C20bc636a-a4d7-41a8-a2dc-7238c7cddcf0&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.11.12-17.02.47:348][262]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.11.12-17.02.47:349][262]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2017.11.12-17.02.47:349][262]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2017.11.12-17.02.47:349][262]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2017.11.12-17.02.47:349][262]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2017.11.12-17.02.47:349][262]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2017.11.12-17.02.47:349][262]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2017.11.12-17.02.47:349][262]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2017.11.12-17.02.47:350][262]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.11.12-17.02.47:351][262]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.11.12-17.02.47:351][262]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.11.12-17.02.47:354][262]LogExit: Exiting.
+[2017.11.12-17.02.47:361][262]Log file closed, 11/12/17 17:02:47
